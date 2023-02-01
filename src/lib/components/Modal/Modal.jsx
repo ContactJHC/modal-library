@@ -1,3 +1,4 @@
+import { useCallback, useEffect } from 'react';
 import './Modal.css'
 import closeIcon from '../../assets/close-icon.svg'
 

@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Modal;
+var _react = require("react");
 require("./Modal.css");
 var _closeIcon = _interopRequireDefault(require("../../assets/close-icon.svg"));
 /**
@@ -28,12 +29,12 @@ var _closeIcon = _interopRequireDefault(require("../../assets/close-icon.svg"));
 
 function Modal(props) {
   var onClose = props.onClose;
-  var closeOnEscapeKeyDown = useCallback(function (e) {
+  var closeOnEscapeKeyDown = (0, _react.useCallback)(function (e) {
     if ((e.charCode || e.keyCode) === 27) {
       onClose();
     }
   }, [onClose]);
-  useEffect(function () {
+  (0, _react.useEffect)(function () {
     document.body.addEventListener('keydown', closeOnEscapeKeyDown);
     return function cleanup() {
       document.body.removeEventListener('keydown', closeOnEscapeKeyDown);
