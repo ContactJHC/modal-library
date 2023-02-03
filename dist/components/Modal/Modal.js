@@ -1,11 +1,12 @@
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard").default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Modal;
-var _react = require("react");
+var _react = _interopRequireWildcard(require("react"));
 require("./Modal.css");
 var _closeIcon = _interopRequireDefault(require("../../assets/close-icon.svg"));
 /**
@@ -40,10 +41,10 @@ function Modal(props) {
       document.body.removeEventListener('keydown', closeOnEscapeKeyDown);
     };
   }, [closeOnEscapeKeyDown]);
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     className: "modal ".concat(props.show ? 'show' : ''),
     onClick: props.onClose
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-content \n                ".concat(props.small ? 'small' : '', "\n                ").concat(props.large ? 'large' : '', "\n                "),
     onClick: function onClick(e) {
       return e.stopPropagation();
@@ -55,12 +56,12 @@ function Modal(props) {
       color: "".concat(props.style.color),
       fontSize: "".concat(props.style.fontSize)
     }
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-body"
-  }, props.children), /*#__PURE__*/React.createElement("button", {
+  }, props.children), /*#__PURE__*/_react.default.createElement("button", {
     onClick: props.onClose,
     className: "button"
-  }, /*#__PURE__*/React.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
     className: "button-icon",
     src: _closeIcon.default,
     alt: "close"
