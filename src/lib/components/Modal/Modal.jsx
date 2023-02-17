@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCallback, useEffect } from 'react';
 import './Modal.css'
-import closeIcon from '../assets/close-icon.svg'
+import closeIcon from '../../assets/close-icon.svg'
   
   /**
    * Returns a modal component with props which are explained below:

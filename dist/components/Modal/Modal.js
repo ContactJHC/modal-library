@@ -8,7 +8,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Modal;
 var _react = _interopRequireWildcard(require("react"));
 require("./Modal.css");
-var _closeIcon = _interopRequireDefault(require("../assets/close-icon.svg"));
+var _closeIcon = _interopRequireDefault(require("../../assets/close-icon.svg"));
 /**
  * Returns a modal component with props which are explained below:
  * the width of the modal is managed via the width attribute of the style prop or the large prop or the small prop
