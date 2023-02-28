@@ -35,6 +35,8 @@ Run the following command:`npm install @contactjhc/modal-library`
 
 ## Code example
 
+```javascript
+
 import { useState } from 'react';
 import { Modal } from '@contactjhc/modal-library'
 import closeIcon from '../../assets/ri_close-circle-fill.svg'
@@ -67,3 +69,5 @@ return(
       <p>Employee Created !</p>
   </Modal>
 )
+
+```
